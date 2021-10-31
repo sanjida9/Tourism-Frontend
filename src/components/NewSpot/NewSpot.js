@@ -82,7 +82,11 @@ const NewSpot = () => {
         {errors.description && <span>This field is required</span>}
         <br />
         <br />
-        <input className="btn btn-success" type="submit" value="Add Spot" />
+        <input
+          className=" btn-success bg-blue px-5 py-2 rounded border-0"
+          type="submit"
+          value="Add Spot"
+        />
       </form>
     </div>
   );

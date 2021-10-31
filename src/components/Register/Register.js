@@ -29,8 +29,8 @@ const Register = () => {
 
           <div className="col-md-6">
             <div className="shadow-lg p-5">
-              <h2 className="text-success">Register</h2>
-              <h6 className=" mt-2 text-success">
+              <h2 className="text-blue">Register</h2>
+              <h6 className=" mt-2 text-blue">
                 Register with Email & Password
               </h6>
               <p className="text-danger text-center">{error}</p>
@@ -43,7 +43,7 @@ const Register = () => {
                     <InputGroup className="mb-2">
                       <InputGroup.Text>
                         <FontAwesomeIcon
-                          className="text-success"
+                          className="text-blue"
                           icon={faUser}
                         ></FontAwesomeIcon>
                       </InputGroup.Text>
@@ -66,7 +66,7 @@ const Register = () => {
                     <InputGroup className="mb-2">
                       <InputGroup.Text>
                         <FontAwesomeIcon
-                          className="text-success"
+                          className="text-blue"
                           icon={faEnvelope}
                         ></FontAwesomeIcon>
                       </InputGroup.Text>
@@ -89,7 +89,7 @@ const Register = () => {
                     <InputGroup className="mb-2">
                       <InputGroup.Text>
                         <FontAwesomeIcon
-                          className="text-success"
+                          className="text-blue"
                           icon={faLock}
                         ></FontAwesomeIcon>
                       </InputGroup.Text>
@@ -112,7 +112,7 @@ const Register = () => {
                     <InputGroup className="mb-2">
                       <InputGroup.Text>
                         <FontAwesomeIcon
-                          className="text-success"
+                          className="text-blue"
                           icon={faLink}
                         ></FontAwesomeIcon>
                       </InputGroup.Text>
@@ -127,15 +127,15 @@ const Register = () => {
                     </InputGroup>
                   </Col>
                 </Row>
-                <button type="submit" className="btn btn-success mt-2 w-100">
+                <button
+                  type="submit"
+                  className="btn btn-success bg-blue mt-2 w-100"
+                >
                   Register
                 </button>
               </Form>
               <h6 className="mt-2">
-                <NavLink
-                  className="text-decoration-none text-success"
-                  to="/login"
-                >
+                <NavLink className="text-decoration-none text-blue" to="/login">
                   Already have an account? Please login!
                 </NavLink>
               </h6>

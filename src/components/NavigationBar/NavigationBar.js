@@ -18,7 +18,7 @@ const NavigationBar = () => {
 
   return (
     <div className="sticky-top">
-      <Navbar className="bg-success" expand="lg">
+      <Navbar className="bg-blue" expand="lg">
         <Container>
           <Navbar.Brand
             sticky="top"
@@ -27,7 +27,7 @@ const NavigationBar = () => {
             to="/home"
           >
             <h2>
-              <img height="50px" src={logo} alt="" /> World Tours
+              <img height="80px" src={logo} alt="" /> World Tours
             </h2>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -114,12 +114,17 @@ const NavigationBar = () => {
                   >
                     Manage All Orders
                   </NavLink>
+                  <h5 className="text-light fw-bold me-2">{displayName}</h5>
 
-                  <NavDropdown
+                  <button onClick={logOut} className="btn btn-light">
+                    Sign Out
+                  </button>
+
+                  {/* <NavDropdown
                     title={
                       <img
                         style={{ width: "45px", borderRadius: "50%" }}
-                        src={photoURL}
+                        src={photoURL || ""}
                         alt=""
                       />
                     }
@@ -132,7 +137,7 @@ const NavigationBar = () => {
                         Sign Out
                       </button>
                     </div>
-                  </NavDropdown>
+                  </NavDropdown> */}
                 </div>
               )}
             </Nav>

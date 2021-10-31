@@ -46,10 +46,8 @@ const Login = () => {
                     .finally(() => setLoading(false));
                 }}
               >
-                <h2 className="text-success">Please Login</h2>
-                <h6 className=" mt-2 text-success">
-                  Login with Email & Password
-                </h6>
+                <h2 className="text-blue">Please Login</h2>
+                <h6 className=" mt-2 text-blue">Login with Email & Password</h6>
                 <p className="text-danger text-center">{error}</p>
                 <Row>
                   <Col className="text-start">
@@ -59,7 +57,7 @@ const Login = () => {
                     <InputGroup className="mb-2">
                       <InputGroup.Text>
                         <FontAwesomeIcon
-                          className="text-success"
+                          className="text-blue"
                           icon={faEnvelope}
                         ></FontAwesomeIcon>
                       </InputGroup.Text>
@@ -81,7 +79,7 @@ const Login = () => {
                     <InputGroup className="mb-2">
                       <InputGroup.Text>
                         <FontAwesomeIcon
-                          className="text-success"
+                          className="text-blue"
                           icon={faLock}
                         ></FontAwesomeIcon>
                       </InputGroup.Text>
@@ -96,20 +94,23 @@ const Login = () => {
                   </Col>
                 </Row>
 
-                <button type="submit" className="btn btn-success mt-2 w-100">
+                <button
+                  type="submit"
+                  className="btn btn-success bg-blue mt-2 w-100"
+                >
                   Login
                 </button>
               </Form>
               <p className="mt-2">
                 <NavLink
-                  className="text-decoration-none text-success"
+                  className="text-decoration-none text-blue"
                   to="/register"
                 >
                   Need an Account? Please Sign up!
                 </NavLink>
               </p>
-              <h6 className="mt-3 text-success">Or</h6>
-              <h5 className="text-success">Login with</h5>
+              <h6 className="mt-3 text-blue">Or</h6>
+              <h5 className="text-blue">Login with</h5>
               <div>
                 <button
                   onClick={(e) => {

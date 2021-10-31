@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 import payment from "./../../assets/images/payment.png";
+import logo from "./../../assets/images/imagesss.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -14,13 +15,13 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="text-white">
-      <div className="py-4 bg-success">
+      <div className="py-4 bg-blue">
         <Container>
           <Row>
             <Col md={5}>
               <div className="my-2">
                 <h2>
-                  <i className="fas fa-eye"></i> Optic Care
+                  <img height="70px" src={logo} alt="" /> World Tours
                 </h2>
               </div>
               <ul className="list-unstyled">
@@ -30,7 +31,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faEnvelope} />
-                  <span className="ms-2 fs-5">opticcare.eye@gmail.com</span>
+                  <span className="ms-2 fs-5">tourworlds.eye@gmail.com</span>
                 </li>
                 <li>
                   <FontAwesomeIcon icon={faPhone} />
@@ -66,9 +67,8 @@ const Footer = () => {
         </Container>
       </div>
       <hr className="m-0 p-0" />
-      <h6 className="text-center m-0 py-3 copyright bg-success">
-        Copyright © All Reserved by Optic Care - Health Service Community in
-        2021
+      <h6 className="text-center m-0 py-3 copyright bg-blue">
+        Copyright © All Reserved by World Tours - Tour Service Community in 2021
       </h6>
     </div>
   );
