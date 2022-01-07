@@ -14,6 +14,7 @@ import NewSpot from "./components/NewSpot/NewSpot";
 import MyOrders from "./components/MyOrders/MyOrders";
 import ManageAllOrders from "./components/ManageAllOrders/ManageAllOrders";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Flight from "./components/Flight/Flight";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/flight">
+              <Flight></Flight>
             </Route>
             <PrivateRoute path="/spot/:id">
               <PlaceOrder></PlaceOrder>

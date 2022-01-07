@@ -46,6 +46,13 @@ const NavigationBar = () => {
               >
                 Home
               </NavLink>
+              <NavLink
+                className="mx-3 d-block"
+                to="/flight"
+                activeStyle={activeStyle}
+              >
+                Book Flight Ticket
+              </NavLink>
 
               {!displayName ? (
                 <div>
